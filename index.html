@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+
+    
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<header id="hero">
+    <video autoplay loop muted id="video-background">
+        <source src="sample.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+    </video>
+
+   
+    <nav class="navbar">
+        <span class="logo">My Portfolio</span>
+
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <button class="menu-toggle" aria-expanded="false" aria-label="Toggle navigation" id="menu-button">
+            ☰
+        </button>
+    </nav>
+
+
+    <div class="hero-content">
+        <h1>Mr. Bijay Pokhrel</h1>
+        <p>Frontend Developer</p>
+    </div>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>Hello, i am bijay Pokhrel, a leaner interested in learning a fullstack both frontend and backend</p>
+</section>
+
+
+<section id="skills">
+    <h2>Skills</h2>
+
+    <div class="skills-container">
+        <div class="skill">HTML5</div>
+        <div class="skill">CSS3</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">React</div>
+        <div class="skill">Python</div>
+    </div>
+</section>
+
+
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div id="projects-grid">
+        <div class="project-card">
+            <h3>Project 1-Car Simulation game</h3>
+            <p>This project is a 3D car simulation game developed in Unity, focusing on realistic vehicle movement, fuel mechanics, UI updates, and game logic. 
+                The game allows the player to control a vehicle, collect coins, manage fuel, and complete goals while navigating through the environment. I implemented separate scripts for car control, coin collection, score tracking, fuel usage, and win/lose handling to follow clean and modular programming practices.</p>
+
+        </div>
+
+        <div class="project-card">
+            <h3>Project 2- Portfolio Website</h3>
+            <p>A fully responsive, professionally designed portfolio website built using HTML5, CSS3 (Flexbox & Grid), and JavaScript. The website showcases my skills, projects, and contact information in a clean and modern layout. 
+                It includes a video-based hero section, mobile navigation toggle, responsive layouts, and form validation using DOM manipulation.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Project 3</h3>
+            <p></p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+
+    <form id="contact-form">
+        <input id="name" type="text" placeholder="Name" required />
+        <input id="email" type="email" placeholder="Email" required />
+        <textarea id="message" placeholder="Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+
+    <div id="form-message"></div>
+</section>
+
+<footer>
+    <p>© 2025 Bijay Pokhrel. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
